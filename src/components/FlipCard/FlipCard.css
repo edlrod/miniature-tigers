@@ -1,0 +1,44 @@
+@reference "tailwindcss";
+
+.flip-card {
+	@apply aspect-square h-full bg-transparent;
+	perspective: 1000px;
+}
+.flip-card-inner {
+	@apply relative size-full text-center transition-transform duration-600;
+	transform-style: preserve-3d;
+}
+.flip-card-btn {
+	@apply block size-full cursor-pointer appearance-none border-0 bg-transparent p-0;
+}
+.flip-card-btn > img {
+	@apply size-full cursor-pointer rounded-xl transition-transform duration-200 ease-in-out;
+}
+.flip-card-front,
+.flip-card-back {
+	@apply absolute size-full transition-all duration-100 ease-in-out;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.flip-card-front {
+	@apply bg-transparent text-black;
+}
+.flip-card-back {
+	@apply bg-white;
+	transform: rotateY(180deg);
+}
+.flip-card.flipped .flip-card-inner {
+	transform: rotateY(180deg);
+}
+.flip-card.flipped {
+	@apply z-100;
+}
+.flip-card:not(.flipped):hover .flip-card-btn > img {
+	@apply scale-105;
+}
+.flip-card:not(.flipped) .flip-card-front {
+	@apply overflow-hidden rounded-xl;
+}
+.flip-card:not(.flipped) iframe {
+	@apply pointer-events-none;
+}

@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@font-face {
+	font-family: "FuturaBold";
+	src: url("/fonts/futura-condensed-bold.ttf");
+	font-display: swap;
+}
+
+@theme {
+	--font-futura: "FuturaBold", sans-serif;
+	--color-primary: #cc3700;
+	--color-album-red: #d93c3c;
+}
+
+/* Base resets */
+@layer base {
+	body {
+		@apply m-0 font-futura text-primary;
+	}
+	h1 {
+		@apply m-0;
+	}
+	a {
+		color: unset;
+	}
+	iframe {
+		@apply h-full w-full border-0;
+	}
+}
+
+/* Letter appear animation */
+@keyframes appear {
+	from {
+		transform: rotateY(90deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+@utility animate-appear {
+	animation: forwards appear 1s;
+}
