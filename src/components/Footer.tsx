@@ -6,7 +6,7 @@ export function Footer() {
 		<footer className="flex justify-center bg-black p-4 text-white shadow-md max-md:flex-col max-md:gap-12 max-md:px-6 [&>div]:mx-auto [&>div]:flex [&>div]:flex-col [&>div]:gap-2 max-md:[&>div]:mx-0">
 			<img
 				className="mx-auto h-auto max-w-[200px] self-center"
-				src="/images/logo.png"
+				src="images/logo.png"
 				alt="Miniature Tigers logo"
 			/>
 			<div>

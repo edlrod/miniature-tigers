@@ -38,7 +38,8 @@ export function Icon({
 			fill="currentColor"
 			aria-hidden="true"
 			role="img"
-			dangerouslySetInnerHTML={{ __html: `<path d="${icons[name]}"/>` }}
-		/>
+		>
+			<path d={icons[name]} />
+		</svg>
 	);
 }

@@ -20,7 +20,7 @@ export interface Video {
 export const featuredAlbum: Album = {
 	title: "Miniature Tigers",
 	year: 2023,
-	image: "/images/miniature-tigers.jpg",
+	image: "images/miniature-tigers.jpg",
 	spotifyId: "6PG4kE4c70B9H9lq0RlZlM",
 };
 
@@ -28,37 +28,37 @@ export const albums: Album[] = [
 	{
 		title: "Vampires in the Daylight",
 		year: 2019,
-		image: "/images/vampires.jpg",
+		image: "images/vampires.jpg",
 		spotifyId: "60gaU4HXxICS04UUNzeN4s",
 	},
 	{
 		title: "I Dreamt I Was a Cowboy",
 		year: 2016,
-		image: "/images/cowboy.jpg",
+		image: "images/cowboy.jpg",
 		spotifyId: "6WlwLgu89GG2ybj5m31gDE",
 	},
 	{
 		title: "Cruel Runnings",
 		year: 2014,
-		image: "/images/cruel-runnings.jpg",
+		image: "images/cruel-runnings.jpg",
 		spotifyId: "5YSbrcKPzEjbqwONZDUQOv",
 	},
 	{
 		title: "Mia Pharaoh",
 		year: 2012,
-		image: "/images/mia-pharaoh.jpg",
+		image: "images/mia-pharaoh.jpg",
 		spotifyId: "2S88EELcEozMQZCvIJUbRJ",
 	},
 	{
 		title: "F O R T R E S S",
 		year: 2010,
-		image: "/images/fortress.jpg",
+		image: "images/fortress.jpg",
 		spotifyId: "21YuCtQyw0qvpWrHicimGy",
 	},
 	{
 		title: "Tell It to the Volcano",
 		year: 2008,
-		image: "/images/volcano.jpg",
+		image: "images/volcano.jpg",
 		spotifyId: "3qmAEhCBKv3TeqhwIqQgqU",
 	},
 ];
